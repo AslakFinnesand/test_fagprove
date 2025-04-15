@@ -1,0 +1,24 @@
+<mvc:View
+    controllerName="test.fagprove.controller.LanuchPad"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+>
+    <Page
+        id="lanuchPad"
+        title="{i18n>pageTitle}"
+        class="sapUiResponsiveContentPadding"
+    >
+        <GenericTile
+            id="idTeeamCalendarGenericTile"
+            class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout"
+            header="{i18n>tileHeader}"
+            subheader="{i18n>tileSubHeader}"
+            wrappingType="Normal"
+            press=".onGenericTilePress"
+        >
+            <TileContent>
+                <ImageContent src="../../../images/dfo_symbol_neg_large.png" />
+            </TileContent>
+        </GenericTile>
+    </Page>
+</mvc:View>

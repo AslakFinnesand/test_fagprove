@@ -72,12 +72,21 @@
 					"pattern": "",
 					"name": "main",
 					"target": "main"
+				},
+				{
+					"pattern": "LanuchPad",
+					"name": "lanuchpad",
+					"target": "LanuchPad"
 				}
 			],
 			"targets": {
 				"main": {
 					"viewId": "main",
 					"viewName": "Main"
+				},
+				"LanuchPad": {
+					"viewId": "lanuchpad",
+					"viewName": "LanuchPad"
 				}
 			}
 		}
