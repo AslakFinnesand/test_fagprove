@@ -3,28 +3,66 @@
 	displayBlock="true"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:l="sap.ui.layout"
 	xmlns:core="sap.ui.core"
 	core:require="{
 		formatter: 'test/fagprove/model/formatter'
 	}">
 
 	<Page
-		title="{i18n>appTitle}"
+		title="{i18n>logInPage}"
 		id="page">
-		<content>
-			<IllustratedMessage
-				title="{i18n>appTitle}"
-				illustrationType="sapIllus-SuccessHighFive"
-				enableVerticalResponsiveness="true"
-				description="{i18n>appDescription}">
-				<additionalContent>
-					<Button
-						id="helloButton"
-						text="{formatter: 'formatter.formatValue', path: 'i18n>btnText'}"
-						press="sayHello" />
-				</additionalContent>
-			</IllustratedMessage>
-		</content>
+		<FlexBox
+            width="100%"
+            height="100%"
+            alignItems="Center"
+            justifyContent="Center"
+        >
+            <Panel width="25rem">
+                <l:VerticalLayout
+                    id="idLoginnVerticalLayout"
+                    width="100%"
+                    class="sapUiContentPadding"
+                >
+                    <Label
+                        text="{i18n>userName}"
+                        required="true"
+                        textAlign="Begin"
+                        width="100%"
+                    />
+                    <Input
+                        id="idUserNameInput"
+                        ariaLabelledBy="idPasswordDescriptionInvisibleText"
+                        required="true"
+                        value="{/userName}"
+                    />
+
+                    <Label
+                        text="{i18n>password}"
+                        required="true"
+                        textAlign="Begin"
+                        width="100%"
+                        class="sapUiTinyMarginTop"
+                    />
+                    <Input
+                        ariaLabelledBy="idUserNameDescriptionInvisibleText"
+                        id="idPasswordLoginInput"
+                        required="true"
+                        type="Password"
+                        value="{/password}"
+                    />
+
+                    <Button
+                        id="idLogInButton"
+                        ariaLabelledBy="idLoginButtonDescriptionInvisibleText"
+                        text="{i18n>logInBtn}"
+                        press=".onLogin"
+                        width="100%"
+                        class="sapUiSmallMarginTop"
+                    />
+                </l:VerticalLayout>
+            </Panel>
+        </FlexBox>
 	</Page>
 
 </mvc:View>
