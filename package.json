@@ -1,9 +1,7 @@
 {
-  "name": "test",
+  "name": "test_fagprove_cap_server",
   "version": "1.0.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
-  "license": "UNLICENSED",
+  "description": "",
   "private": true,
   "dependencies": {
     "@sap/cds": "^8",
@@ -14,6 +12,43 @@
     "@cap-js/cds-types": "^0.9.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "w": " cds deploy && cds watch --port 4008"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "credentials": {
+          "url": "db.sqlite"
+        }
+      }
+    }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

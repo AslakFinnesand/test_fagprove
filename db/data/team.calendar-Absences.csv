@@ -1,0 +1,8 @@
+ID,start,end,title,info,type,status,person_ID
+a1b2c3d4-5678-90ab-cdef-123456789012,2025-01-15T07:30:00.000Z,2025-01-15T08:30:00.000Z,Personlig ærend,Trenger fri for å håndtere en privat sak,Type02,Godkjent,7e6d4e3a-1234-5678-9abc-def012345678
+a1b2c3d4-5678-90ab-cdef-1234567890sdf,2025-05-12T07:30:00.000Z,2025-05-19T08:30:00.000Z,Sykemelding,Er ute av stand til å jobbe grunnet sykdom,Type02,Sendt til behandling,8f7e6d5c-2345-6789-bcde-f01234567890
+91fb8fb3-3a0d-4163-9f52-09337dcfb60d,2025-03-15T07:30:00.000Z,2025-03-18T08:30:00.000Z,Kortvarig sykefravær,Trenger noen dager for å bli frisk,Type02,Avslått,9g8f7e6d-3456-7890-cdef-012345678901
+a9413716-1385-4732-9c5f-366a93db0f40,2025-04-11T07:30:00.000Z,2025-04-14T08:30:00.000Z,Helsemessig fravær,Føler meg dårlig og trenger tid til å komme meg,Type02,Ikke behandlet,ef5e67d6-3e08-42ab-a5ed-274d6b9afc81
+c811bb4e-5db7-45f2-8238-0961e25f0de8,2025-12-05T07:30:00.000Z,2025-12-20T08:30:00.000Z,Ekstraordinær situasjon,Værforholdene gjør det umulig å møte på jobb,Type02,Returnert til søker,0e8739aa-c7e2-4ff8-b301-f8319a3d98d3
+a78179ea-ab2b-4e6a-a032-97cc32b10728,2025-07-01T07:30:00.000Z,2025-07-16T08:30:00.000Z,Skadefravær,Har pådratt meg en skade som krever hvile og behandling,Type02,I prosess,832ab8c7-e7aa-437a-bf24-811999ff3b28
+235f1270-c0d8-4b89-be31-a6ad8dd2b672,2025-08-17T07:30:00.000Z,2025-08-20T08:30:00Z,Fri for personlig utvikling,Ønsker å bruke noen dager til å delta i en inspirerende aktivitet,Type02,Ikke sendt inn,a75943c2-fd4c-4929-b09a-17f0a76a81be
