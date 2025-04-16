@@ -1,0 +1,68 @@
+<mvc:View
+    controllerName="test.fagprove.controller.TeamCalendar"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:unified="sap.ui.unified"
+>
+    <Page
+        id="teamcalendar"
+        title="{i18n>pageTitleCalendar}"
+        showNavButton="true"
+        navButtonPress=".onPageNavBackButtonPress"
+        class="sapUiResponsiveContentPadding"
+    >
+        <Panel
+            headerText="{path: '/userName', formatter: '.userNameCalendar'}"
+            class="sapUiResponsiveMargin"
+            width="auto"
+        >
+            <PlanningCalendar
+                id="idPlanningCalendar"
+                startDate="{path: 'calendarData>/startDate'}"
+                rows="{path: 'calendarData>/people'}"
+                appointmentsVisualization="Filled"
+                appointmentSelect="onPlanningCalendarAppointmentSelect"
+                appointmentHeight="Automatic"
+                showEmptyIntervalHeaders="false"
+                builtInViews="Week,Day,One Month,Month"
+                viewKey="One Month"
+                stickyHeader="true"
+                showWeekNumbers="true"
+                showDayNamesLine="true"
+                legend="PCLegend"
+            >
+                <toolbarContent>
+                    <ToolbarSpacer />
+                    <Button
+                        id="legendButton"
+                        icon="sap-icon://legend"
+                        text="Show Legend"
+                        press=".onShowLegendButtonPress"
+                    />
+                </toolbarContent>
+
+                <rows>
+                    <PlanningCalendarRow
+                        icon="sap-icon://employee"
+                        title="{calendarData>name}"
+                        text="{calendarData>role}"
+                        appointments="{path: 'calendarData>appointments',templateShareable: false}"
+                    >
+                        <appointments>
+                            <unified:CalendarAppointment
+                                startDate="{calendarData>start}"
+                                endDate="{calendarData>end}"
+                                icon="{calendarData>pic}"
+                                title="{calendarData>title}"
+                                text="{calendarData>info}"
+                                type="{calendarData>type}"
+                                tentative="{calendarData>tentative}"
+                                color="{calendarData>color}"
+                            />
+                        </appointments>
+                    </PlanningCalendarRow>
+                </rows>
+            </PlanningCalendar>
+        </Panel>
+    </Page>
+</mvc:View>
