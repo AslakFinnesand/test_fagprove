@@ -18,37 +18,25 @@
   "cds": {
     "requires": {
       "db": {
-        "kind": "sqlite",
-        "credentials": {
-          "url": "db.sqlite"
+        "kind": "sqlite"
+      },
+      "auth": {
+        "kind": "mocked",
+        "users": {
+          "Alice": {
+            "password": "a",
+            "roles": [
+              "admin"
+            ]
+          },
+          "Jon": {
+            "password": "jao",
+            "roles": [
+              "admin"
+            ]
+          }
         }
       }
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

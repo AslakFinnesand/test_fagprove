@@ -16,7 +16,7 @@ entity People {
       role      : String;
       leader    : Association to one Leaders;
       travels   : Association to many Travels on travels.person = $self;
-      birthDay  : Association to one BirthDay on birthDay.person = $self;
+      birthDay  : Association to many BirthDay on birthDay.person = $self;
       absences  : Association to many Absences on absences.person = $self;
 }
 
