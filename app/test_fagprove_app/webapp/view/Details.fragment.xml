@@ -13,14 +13,8 @@
             singleContainerFullSize="false">
             <Label text="{i18n>additionalInfo}" labelFor="idMoreInfoText"/>
             <Text id="idMoreInfoText" text="{calendarData>info}"/>
-            <Label text="Status" labelFor="idStatusInfoText" visible="{
-                                                                        path: 'calendarData>status',
-                                                                        formatter: '.fragmentVisiblelStatusFormatter'
-                                                                    }"/>
-            <Text id="idStatusInfoText" text="{calendarData>status}" visible="{
-                                                                            path: 'calendarData>status',
-                                                                            formatter: '.fragmentVisiblelStatusFormatter'
-                                                                            }"/>
+            <Label text="Status" labelFor="idStatusInfoText" visible="{path: 'calendarData>status',    formatter: '.fragmentVisiblelStatusFormatter'}"/>
+            <Text id="idStatusInfoText" text="{calendarData>status}" visible="{path: 'calendarData>status', formatter: '.fragmentVisiblelStatusFormatter'}"/>
             <Label text="{i18n>startDate}" labelFor="idStartDateText"/>
             <Text id="idStartDateText" text="{path: 'calendarData>start', formatter: '.formatDate'}"/>
             <Label text="{i18n>endDate}" labelFor="idEndDateText"/>
