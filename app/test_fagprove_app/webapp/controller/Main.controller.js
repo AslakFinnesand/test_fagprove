@@ -27,7 +27,7 @@ sap.ui.define([
 			this.getRouter().navTo("lanuchpad");
 		},
 
-		onLogin: function () {
+		onLogInButtonPress: function () {
 			const rootModel = this.getView().getModel();
 			const logInName = rootModel.getProperty("/userName");
 			const pw = rootModel.getProperty("/password");
